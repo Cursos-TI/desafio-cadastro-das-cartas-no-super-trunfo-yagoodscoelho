@@ -1,22 +1,39 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+#include <stdio.h>
+    int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+        float populacao1, populacao2, pib1, pib2, area1, area2, letra1, letra2;
+        int turistico1, turistico2;
+        char codigo1[10], codigo2[10], cidade1[10], cidade2[10];
+        char inicial1[1], inicial2[1];
+        char nome1[10], nome2[10];
+
+        printf("Digite o nome da primeira cidade:\n");
+        scanf("%s", &cidade1);
+
+        printf("Digite a primeira letra do nome da cidade:\n");
+        scanf("%c", &letra1);
+
+        printf("Digite a população da primeira cidade:\n");
+        scanf("%f", &populacao1);
+
+        printf("Digite o pib da primeira cidade:\n");
+        scanf("%f", &pib1);
+
+        printf("Digite a área da primeira cidade:\n");
+        scanf("%f", &area1);
+
+        printf("Digite o Codigo da primeira cidade com 3 digitos:\n");
+        scanf("%c", &codigo1);
+
+        printf("O nome da cidade é: %c\n", cidade1);
+        printf("O código da cidade 1 é: %c\n", codigo1);
+        printf("A area da cidade 1 é: %f\n",area1);
+        printf("O pib da cidade 1 é: %f\n", pib1);
+        printf("A população da cidade 1 é: %f \n");
+        printf("O total de pontos turisticos da cidade 1 é: %i\n", turistico1);
+
 
     return 0;
 }
